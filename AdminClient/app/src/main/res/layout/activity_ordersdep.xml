@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".ordersdepActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_order1"
+        android:background="#E91E63"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_searchorder1"
+        android:layout_below="@id/toolbar_order1"
+        android:hint="بحث ..."
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        />
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/selected_search1"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@id/toolbar_order1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        ></Spinner>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/res_fatora1"
+        android:layout_below="@id/text_searchorder1"
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

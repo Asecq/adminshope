@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_allposts"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="0dp"
+    android:layoutDirection="rtl"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <ImageView
+        android:id="@+id/image_allposts"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/add"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+    <TextView
+        android:id="@+id/name_allposts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="textEnd"
+        android:layout_marginRight="150dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:text="منتج جديد للبيع"
+        />
+    <TextView
+        android:id="@+id/dep_allposts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="150dp"
+        android:textAlignment="textEnd"
+        android:textStyle="italic"
+        android:text="القسم : العطور"
+        />
+    <TextView
+        android:id="@+id/code_allposts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="150dp"
+        android:textAlignment="textEnd"
+        android:textStyle="italic"
+        android:text="الرمز : 304"
+        />
+    <ImageView
+        android:id="@+id/edit_allposts"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/ic_edit"
+
+        />
+    <ImageView
+        android:id="@+id/delete_Allposts"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="340dp"
+        android:src="@drawable/ic_delete"
+        />
+
+
+
+</androidx.cardview.widget.CardView>

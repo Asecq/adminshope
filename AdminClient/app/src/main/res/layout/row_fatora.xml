@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_margin="5dp"
+    android:id="@+id/card_fattora"
+    android:background="#ffff"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/from_mandob"
+            android:layout_below="@id/data_fatoraorder"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_near_me"
+                />
+            <TextView
+                android:id="@+id/name_mandop"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginRight="20dp"
+                />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_home_black"
+            android:layout_marginRight="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/de_show"
+            android:textColor="#000000"
+            android:text="Aktest"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="192dp"
+            />
+        <View
+            android:id="@+id/static_order"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@color/red"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_fatoraorder"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="1000309"
+            android:textSize="19dp"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الملاحظة هيه الملاحظة نفسها"
+            android:id="@+id/note_fatoraorder"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(مجمدة)"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:id="@+id/text_static"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="#DDA80A0A"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="علي محمد"
+            android:id="@+id/user_fatora"
+            android:layout_marginTop="50dp"
+            android:textColor="#E91E63"
+            android:layout_marginRight="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019/2/3 33:40"
+            android:id="@+id/data_fatoraorder"
+            android:layout_marginTop="15dp"
+            android:textSize="14dp"
+            android:textColor="#009688"
+            android:layout_marginRight="260dp"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

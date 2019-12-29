@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/colorAccent"
+    tools:context=".AddMarkaActivity">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tower"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/towo_logo1"
+        android:layout_marginTop="120dp"
+        />
+
+    <TextView
+        android:id="@+id/logo_creat_maka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="انشاء ماركة"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/towo_logo1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/name_makanew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_des"
+        android:layout_below="@+id/logo_creat_maka"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="اسم الماركة"
+        android:textColorHint="#646060"
+        android:theme="@style/CustomEditTextView"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:textSize="17dp"
+        />
+    <Button
+        android:id="@+id/create_marka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/name_makanew"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:text="انشاء الماركة"
+        android:background="#003D5B"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/create_post_new_marka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="انشاء منشور جديد ؟"
+        android:layout_below="@id/create_marka"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:background="#003D5B"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="برمجة وتصميم القلعة الذهبية"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

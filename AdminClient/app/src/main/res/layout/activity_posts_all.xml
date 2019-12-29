@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E2E2"
+    android:layoutDirection="rtl"
+    tools:context=".PostsAll">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/search_posts"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="بحث ..."
+        android:drawableLeft="@drawable/ic_search"
+        android:background="@drawable/inputs_des"
+        android:padding="10dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re_allposts"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/search_posts"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

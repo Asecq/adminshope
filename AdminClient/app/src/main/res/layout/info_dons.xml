@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#9C27B0"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoD_username"
+        android:textColor="#FFEB3B"
+        android:text="اسم الزبون : شعلي"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoD_code"
+        android:layout_below="@id/infoD_username"
+        android:textColor="#FFEB3B"
+        android:text="رقم الطلب : 2039"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoD_count"
+        android:layout_below="@id/infoD_code"
+        android:textColor="#FFEB3B"
+        android:text="رقم الطلب : 2039"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoD_price"
+        android:layout_below="@id/infoD_count"
+        android:textColor="#FFEB3B"
+        android:text="رقم الطلب : 2039"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoD_time"
+        android:layout_below="@id/infoD_price"
+        android:textColor="#FFEB3B"
+        android:text="رقم الطلب : 2039"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoD_phone"
+        android:layout_below="@id/infoD_time"
+        android:textColor="#FFEB3B"
+        android:text="رقم الطلب : 2039"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="انهاء"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/infoD_phone"
+        android:id="@+id/close_infoD"
+        android:layout_centerHorizontal="true"
+        android:textColor="#551313"
+        android:textStyle="bold"
+
+        />
+</RelativeLayout>

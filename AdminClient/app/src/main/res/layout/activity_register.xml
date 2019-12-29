@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@color/colorAccent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/text_reg_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="انشاء حساب"
+        android:textSize="29dp"
+        android:textColor="#E91E63"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/name_register"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_des"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="الأسم ...."
+        android:layout_below="@+id/text_reg_welcome"
+        android:textColorHint="#646060"
+        android:theme="@style/CustomEditTextView"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/pass_register"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_below="@+id/name_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_des"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint=" ... كلمة السر"
+        android:textColorHint="#646060"
+        android:theme="@style/CustomEditTextView"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/id_register"
+        android:gravity="center"
+        android:layout_below="@+id/pass_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_des"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:enabled="false"
+        android:layout_marginRight="90dp"
+        android:layout_marginLeft="90dp"
+        android:hint=".... جاري تحميل رقم الحساب الجديد"
+        android:textColorHint="#646060"
+        android:theme="@style/CustomEditTextView"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idnew"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        android:layout_marginRight="5dp"
+        android:text="رقم الحساب :  "
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/pass_register"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/copy_id"
+        android:text="نسخ"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/pass_register"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نوع الحساب"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id_register"
+        android:id="@+id/type_pass"
+        android:textColor="#C93567"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sp_reg"
+        android:layout_below="@+id/type_pass"
+        android:layout_marginTop="10dp"
+        >
+
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_reg"
+        android:background="@drawable/inputs_des"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="انشاء الحساب"
+        />
+
+
+
+</RelativeLayout>

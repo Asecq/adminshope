@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:layoutDirection="rtl">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/close_marke"
+        android:textColor="@color/red"
+        android:textSize="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ListView
+        android:id="@+id/listview_marka"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/close_marke"
+        android:cacheColorHint="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</RelativeLayout>

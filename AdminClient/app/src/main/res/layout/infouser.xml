@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/info_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Username"
+        android:textSize="17dp"
+        android:drawableStart="@drawable/ic_person"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/info_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Username"
+        android:textSize="17dp"
+        android:layout_below="@+id/info_username"
+        android:drawableStart="@drawable/ic_local_phone"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/info_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/info_phone"
+        android:text="Username"
+        android:textSize="17dp"
+        android:drawableStart="@drawable/ic_vpn_key"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btn_close_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_pass"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:text="تم"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:layout_marginRight="90dp"
+        android:background="#EC6060"
+        android:layout_marginLeft="90dp"
+
+
+        />
+</RelativeLayout>

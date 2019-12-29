@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layoutDirection="rtl"
+    android:id="@+id/card_users"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    >
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="5dp"
+       android:id="@+id/view_online"
+       android:background="@color/colorAccent"
+       android:layout_height="match_parent"></LinearLayout>
+
+ <ImageView
+     android:id="@+id/user_image"
+     android:layout_width="35dp"
+     android:layout_height="match_parent"
+     android:layout_marginRight="10dp"
+     android:src="@drawable/ic_person" />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Ali Mohammed"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        />
+    <ImageView
+        android:id="@+id/user_info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="230dp"
+        android:src="@drawable/ic_info"
+        />
+    <ImageView
+        android:id="@+id/user_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="280dp"
+        android:src="@drawable/ic_edit"
+        />
+    <ImageView
+        android:id="@+id/user_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="330dp"
+        android:src="@drawable/ic_delete"
+        />
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layoutDirection="rtl"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        tools:context=".Cpanal">
+
+        <RelativeLayout
+            android:id="@+id/liner_cpp0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/welcome_admin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="لوحة تحكم المخزن"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/liner_cpp5"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/liner_cpp0"
+            android:background="#003D5B"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="180dp"
+            android:layout_height="130dp">
+            <ImageView
+                android:id="@+id/test_img_orders"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/programing"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/test_text_orders"
+                android:layout_below="@id/test_img_orders"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="الفاتورات"
+                />
+            <TextView
+                android:id="@+id/orders_num1"
+                android:text=""
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test_text_orders"
+                android:textColor="#00AAFF"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/liner_cpanal10"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/liner_cpp0"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentStart="true"
+
+            android:background="#003D5B"
+            android:layout_width="180dp"
+            android:layout_height="130dp">
+            <ImageView
+                android:id="@+id/test_img_posts"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/programing"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/test_text_posts"
+                android:layout_below="@id/test_img_posts"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="عدد المنشورات"
+                />
+            <TextView
+                android:id="@+id/posts_num1"
+                android:text=""
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test_text_posts"
+                android:textColor="#00AAFF"
+                />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/logout_deper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputs_des"
+            android:text="تسجيل خروج"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_below="@id/liner_cpanal10"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:id="@+id/main_printer"
+    tools:context=".Printer_fatora">
+    <RelativeLayout
+        android:id="@+id/la_listviewbelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_fatora"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:text="شركة القلعة الذهبية"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_fatora2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:text="للتجارة العامة محدودة المسؤولية"
+            android:textSize="8dp"
+            android:layout_below="@id/title_fatora"
+            android:textStyle="bold"
+            android:textColor="#0F0F0F"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOLDEN CASTEL COPMANY"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize = "8dp"
+            android:id="@+id/fatora_title_eng"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/title_fatora4"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="27dp"
+            android:text="for general trading"
+            android:textSize="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/fatora_title_eng"
+            android:textStyle="bold"
+            android:textColor="#535252"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/title_fatora5"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="limited liabilitv"
+            android:gravity="center"
+            android:textSize="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/title_fatora4"
+            android:textStyle="bold"
+            android:textColor="#535252"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/title_fatora6"
+            android:layout_marginTop="5dp"
+            android:text="Email : nabeelalmola@gmail.com"
+            android:gravity="center"
+            android:textSize="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/title_fatora5"
+            android:textStyle="bold"
+            android:textColor="#535252"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/view_fatoraa1"
+            android:layout_below="@id/title_fatora6"
+            android:layout_marginTop="5dp"
+            android:background="#C50202"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/view_fatoraa1"
+            android:id="@+id/below_fatora"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/data_fatora_printer"
+                android:text="التاريخ : 2019/12/21"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="8dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="رقم الفاتورة : 5"
+                android:id="@+id/number_fatora_printer"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:layout_marginRight="400dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="السيد : نبيل الخفاجي"
+                android:id="@+id/user_fatora_printer"
+                android:textSize="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@id/data_fatora_printer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="الملاحظة : تظهر هنا الملاحظة"
+                android:id="@+id/note_fatora_printer"
+                android:textSize="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="200dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_below="@id/data_fatora_printer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#2B2A2A"
+                android:layout_below="@id/note_fatora_printer"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/below_fatora"
+            android:id="@+id/names_printer"
+            >
+        </RelativeLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="730dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/listview_printer"
+            android:layout_below="@id/names_printer"
+            ></ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

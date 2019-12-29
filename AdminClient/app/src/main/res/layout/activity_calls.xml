@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layoutDirection="rtl"
+    tools:context=".Calls">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_orders"
+        android:text="الطلبات"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFEB3B"
+        android:id="@+id/view_title_orders"
+        android:layout_below="@id/title_orders"
+        android:layout_marginTop="5dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rec_orders"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/view_title_orders"
+        android:layout_height="match_parent">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

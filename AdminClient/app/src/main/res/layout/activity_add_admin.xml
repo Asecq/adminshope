@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#4CAF50"
+    tools:context=".add_adminActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo_ceadmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="أنشاء حساب أدمن"
+        android:textSize="29dp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_name_new"
+        android:drawableLeft="@drawable/ic_person"
+        android:padding="10dp"
+        android:textColorHint="#111010"
+        android:hint="أسم الأدمن"
+        android:textColor="#ffff"
+        android:layout_below="@id/logo_ceadmin"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_pass_new"
+        android:drawableLeft="@drawable/ic_vpn_key_pp"
+        android:padding="10dp"
+        android:textColorHint="#111010"
+        android:hint="كلمة السر"
+        android:textColor="#ffff"
+        android:layout_below="@id/admin_name_new"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_pass_new"
+        android:id="@+id/work_admin"
+        android:layout_centerHorizontal="true"
+        android:text="نوع الأدمن"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:layout_marginTop="20dp"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radi_groub_admin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/work_admin"
+        >
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Aradio_1"
+          android:text="أدمن أعتيادي"
+          android:textSize="20dp"
+          android:textColor="#0912B9"
+          android:checked="true"
+          />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Aradio_2"
+            android:text="أدمن رئيسي"
+            android:textSize="20dp"
+            android:textColor="#BE1D1D"
+            />
+
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/creat_adminnew"
+        android:background="@drawable/inputs_des"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/radi_groub_admin"
+        android:layout_marginTop="30dp"
+        android:text="أنشاء  الحساب"
+        />
+
+
+
+</RelativeLayout>

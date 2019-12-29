@@ -1,0 +1,26 @@
+<resources>
+    <string name="databasename">shope</string>
+    <string name="app_name">لوحة تحكم الأدمن</string>
+    <string-array name="dolars">
+        <item>السعر بالدولار الأمريكي</item>
+        <item>السعر بالدينار العراقي</item>
+    </string-array>
+    <string-array name="adapter_price">
+        <item>قطعة</item>
+        <item>درزن</item>
+        <item>سيت</item>
+        <item>كارتونة</item>
+    </string-array>
+    <string-array name="adapter_admin">
+        <item>أدمن</item>
+        <item>أمين مخزن</item>
+    </string-array>
+    <string-array name="adapter_regester">
+        <item>زبون</item>
+        <item>أمين مخزن</item>
+        <item>أدمن</item>
+        <item>مندوب</item>
+    </string-array>
+
+
+</resources>

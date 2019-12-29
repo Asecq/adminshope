@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layoutDirection="rtl"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:id="@+id/infocard_done"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="5dp"
+            android:background="#8BC34A"
+            android:layout_alignParentStart="true"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/infodone_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30499594"
+            android:layout_alignParentStart="true"
+            android:textColor="#3F51B5"
+
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/infodone_time"
+            android:layout_marginTop="18dp"
+            android:textSize="15dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="#E91E63"
+            android:text="2019/12/21"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
