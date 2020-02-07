@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/closed_noteing_done"
+        android:textColor="@color/red"
+        android:textSize="19dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_editeor_title_done"
+        android:text="الملاحظات"
+        android:layout_centerHorizontal="true"
+        android:textSize="19dp"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_below="@id/note_editeor_title_done"
+        android:layout_marginTop="5dp"
+        android:id="@+id/vi_title_note_done"
+        />
+
+    <EditText
+        android:enabled="false"
+        android:hint="اكتب هنا"
+        android:maxLines="10"
+        android:lines="8"
+        android:textColor="@color/colorAccent"
+        android:minLines="6"
+        android:gravity="top|right"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:id="@+id/edit_fatora_note_done"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/vi_title_note_done"
+        android:layout_height="200dp" />
+    <Button
+        android:background="#ffff"
+        android:layout_margin="10dp"
+        android:text="تم التعديل"
+        android:layout_below="@id/edit_fatora_note_done"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_sent_note_to_deper_done"
+        />
+
+
+</RelativeLayout>

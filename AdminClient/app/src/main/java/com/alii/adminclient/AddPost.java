@@ -186,7 +186,7 @@ public class AddPost extends AppCompatActivity  implements AdapterView.OnItemSel
                     }
                 };
                 mListView.setAdapter(aadapter);
-               final List<String> keys2 = new ArrayList<>();
+                final List<String> keys2 = new ArrayList<>();
                 reference.addListenerForSingleValueEvent(new ValueEventListener() {
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
@@ -542,7 +542,6 @@ public class AddPost extends AppCompatActivity  implements AdapterView.OnItemSel
         final StorageReference filePath = ProductImagesRef.child(ImageUri.getLastPathSegment() + productRandomKey + ".jpg");
 
         final UploadTask uploadTask = filePath.putFile(ImageUri);
-
 
         uploadTask.addOnFailureListener(new OnFailureListener() {
             @Override

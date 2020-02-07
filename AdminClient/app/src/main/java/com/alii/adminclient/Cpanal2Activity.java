@@ -18,13 +18,14 @@ import com.google.firebase.database.ValueEventListener;
 public class Cpanal2Activity extends AppCompatActivity {
     private DatabaseReference root;
     private TextView num_posts , num_orders;
-    private DatabaseReference root_users , root_orders;
+    private DatabaseReference root_users , root_orders ;
     private RelativeLayout  postsliner, orders ;
     private Button logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cpanal2);
+        final String dep = getIntent().getExtras().getString("dep");
         logout = findViewById(R.id.logout_deper);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +39,7 @@ public class Cpanal2Activity extends AppCompatActivity {
         num_orders = findViewById(R.id.orders_num1);
         orders = findViewById(R.id.liner_cpp5);
         postsliner = findViewById(R.id.liner_cpanal10);
-        final String dep = getIntent().getExtras().getString("dep");
+
         postsliner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +70,7 @@ public class Cpanal2Activity extends AppCompatActivity {
             }
         });
 
-        root_orders = FirebaseDatabase.getInstance().getReference().child("depsfatora").child(dep);
+        root_orders = FirebaseDatabase.getInstance().getReference().child("DeptF").child(dep);
         root_orders.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -82,5 +83,6 @@ public class Cpanal2Activity extends AppCompatActivity {
 
             }
         });
+
     }
 }

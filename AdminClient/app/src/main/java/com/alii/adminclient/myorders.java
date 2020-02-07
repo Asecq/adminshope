@@ -130,6 +130,8 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                         Intent intent = new Intent(myorders.this,fatora.class);
                         intent.putExtra("key",String.valueOf(dons.getNumber()));
                         intent.putExtra("phone",String.valueOf(dons.getPhone()));
+                        intent.putExtra("newstatic","yes");
+                        intent.putExtra("dep",dons.getDep());
                         startActivity(intent);
                     }
                 });
@@ -241,6 +243,8 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                             Intent intent = new Intent(myorders.this,fatora.class);
                             intent.putExtra("key",String.valueOf(dons.getNumber()));
                             intent.putExtra("phone",String.valueOf(dons.getPhone()));
+                            intent.putExtra("newstatic","yes");
+                            intent.putExtra("dep",dons.getDep());
                             startActivity(intent);
                         }
                     });
@@ -299,6 +303,8 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                         Intent intent = new Intent(myorders.this,fatora.class);
                         intent.putExtra("key",String.valueOf(dons.getNumber()));
                         intent.putExtra("phone",String.valueOf(dons.getPhone()));
+                        intent.putExtra("newstatic","yes");
+                        intent.putExtra("dep",dons.getDep());
                         startActivity(intent);
                     }
                 });
@@ -403,6 +409,8 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                                         Intent intent = new Intent(myorders.this,fatora.class);
                                         intent.putExtra("key",String.valueOf(dons.getNumber()));
                                         intent.putExtra("phone",String.valueOf(dons.getPhone()));
+                                        intent.putExtra("newstatic","yes");
+                                        intent.putExtra("dep",dons.getDep());
                                         startActivity(intent);
                                     }
                                 });
@@ -502,6 +510,8 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                                         Intent intent = new Intent(myorders.this,fatora.class);
                                         intent.putExtra("key",String.valueOf(dons.getNumber()));
                                         intent.putExtra("phone",String.valueOf(dons.getPhone()));
+                                        intent.putExtra("newstatic","yes");
+                                        intent.putExtra("dep",dons.getDep());
                                         startActivity(intent);
                                     }
                                 });
@@ -627,10 +637,6 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
 
                     }
                 });
-                if(!TextUtils.isEmpty(dons.getSaller().toString())){
-                    d_holder.saller.setText(dons.getSaller());
-                    d_holder.mandop.setVisibility(View.VISIBLE);
-                }
                 d_holder.dep.setText(dons.getDep());
                 d_holder.code.setText(String.valueOf(dons.getNumber()));
                 d_holder.note.setText(dons.getNote());
@@ -641,6 +647,8 @@ public class myorders extends AppCompatActivity implements AdapterView.OnItemSel
                         Intent intent = new Intent(myorders.this,fatora.class);
                         intent.putExtra("key",String.valueOf(dons.getNumber()));
                         intent.putExtra("phone",String.valueOf(dons.getPhone()));
+                        intent.putExtra("newstatic","yes");
+                        intent.putExtra("dep",dons.getDep());
                         startActivity(intent);
                     }
                 });

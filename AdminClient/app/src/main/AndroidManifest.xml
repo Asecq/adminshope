@@ -12,7 +12,7 @@
         android:roundIcon="@drawable/ic_person"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".postssActivity"></activity>
+        <activity android:name=".postssActivity" />
         <activity android:name=".ordersdepActivity" />
         <activity android:name=".Cpanal2Activity" />
         <activity android:name=".Printer_fatora" />

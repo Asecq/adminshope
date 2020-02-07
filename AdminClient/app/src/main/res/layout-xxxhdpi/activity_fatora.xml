@@ -181,6 +181,76 @@
                     android:text="$304"
                     android:textColor="#4CAF50"
                     />
+                <RelativeLayout
+                    android:layout_below="@id/back_to_h"
+                    android:id="@+id/show_staticfinal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="130dp"
+                    android:background="#063347"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:id="@+id/static_textfinal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffff"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@id/back_to_h"
+                    android:id="@+id/show_static"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="130dp"
+                    android:background="#063347"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:id="@+id/static_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffff"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgs_added"
+                    android:text=" + اضافة مرفقات"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/show_static"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    />
+                <TextView
+                    android:id="@+id/fatoring_showing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/show_static"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="عرض المرفقات"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
                 <TextView
                     android:layout_marginTop="75dp"
                     android:id="@+id/totalsizefatora"
@@ -260,6 +330,7 @@
                     android:layout_below="@id/time_fatora"
                     android:textColor="#FF5722"
                     />
+
 
             </RelativeLayout>
 

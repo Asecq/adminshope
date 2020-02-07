@@ -60,8 +60,9 @@ public class ordersdepActivity extends AppCompatActivity  implements AdapterView
         sea_text = findViewById(R.id.text_searchorder1);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-       dep = getIntent().getExtras().getString("dep");
-        rootPro = FirebaseDatabase.getInstance().getReference().child("depsfatora").child(dep);
+        dep = getIntent().getExtras().getString("dep");
+        rootPro = FirebaseDatabase.getInstance().getReference().child("Calls");
+        Query query = rootPro.orderByChild("dep").equalTo(dep).orderByChild("StorStatus").startAt("0").endAt("");
 
         ArrayList<String> items = new ArrayList<>();
         String[] plants = new String[]{
@@ -93,7 +94,7 @@ public class ordersdepActivity extends AppCompatActivity  implements AdapterView
         manager.setStackFromEnd(true);
         recyclerView.setLayoutManager(manager);
         recyclerView.setPadding(0,0,0,0);
-    options = new FirebaseRecyclerOptions.Builder<Cells>().setQuery(rootPro, Cells.class).build();
+    options = new FirebaseRecyclerOptions.Builder<Cells>().setQuery(query, Cells.class).build();
     adapter = new FirebaseRecyclerAdapter<Cells, r_holder>(options) {
         @Override
         protected void onBindViewHolder(@NonNull final r_holder d_holder, final int i, @NonNull final Cells dons) {
@@ -128,6 +129,7 @@ public class ordersdepActivity extends AppCompatActivity  implements AdapterView
                     intent.putExtra("key",String.valueOf(dons.getNumber()));
                     intent.putExtra("phone",String.valueOf(dons.getPhone()));
                     intent.putExtra("dep",dep);
+                    intent.putExtra("newstatic","no");
                     startActivity(intent);
                 }
             });
@@ -235,6 +237,7 @@ public class ordersdepActivity extends AppCompatActivity  implements AdapterView
                             intent.putExtra("key",String.valueOf(dons.getNumber()));
                             intent.putExtra("phone",String.valueOf(dons.getPhone()));
                             intent.putExtra("dep",dep);
+                            intent.putExtra("newstatic","no");
                             startActivity(intent);
                         }
                     });
@@ -289,6 +292,7 @@ public class ordersdepActivity extends AppCompatActivity  implements AdapterView
                         intent.putExtra("key",String.valueOf(dons.getNumber()));
                         intent.putExtra("phone",String.valueOf(dons.getPhone()));
                         intent.putExtra("dep",dep);
+                        intent.putExtra("newstatic","no");
                         startActivity(intent);
                     }
                 });
@@ -384,6 +388,7 @@ public static class r_holder extends RecyclerView.ViewHolder {
                                         intent.putExtra("key",String.valueOf(dons.getNumber()));
                                         intent.putExtra("phone",String.valueOf(dons.getPhone()));
                                         intent.putExtra("dep",dep);
+                                        intent.putExtra("newstatic","no");
                                         startActivity(intent);
                                     }
                                 });
@@ -479,6 +484,7 @@ public static class r_holder extends RecyclerView.ViewHolder {
                                     intent.putExtra("key",String.valueOf(dons.getNumber()));
                                     intent.putExtra("phone",String.valueOf(dons.getPhone()));
                                     intent.putExtra("dep",dep);
+                                    intent.putExtra("newstatic","no");
                                     startActivity(intent);
                                 }
                             });
@@ -615,6 +621,7 @@ public static class r_holder extends RecyclerView.ViewHolder {
                         intent.putExtra("key",String.valueOf(dons.getNumber()));
                         intent.putExtra("phone",String.valueOf(dons.getPhone()));
                         intent.putExtra("dep",dep);
+                        intent.putExtra("newstatic","no");
                         startActivity(intent);
                     }
                 });

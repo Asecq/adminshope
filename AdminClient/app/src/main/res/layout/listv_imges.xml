@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addnew_images"
+        android:text="اضافة مرفق جديد"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:textColor="#0422C5"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="حفظ"
+        android:layout_centerHorizontal="false"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/save_imgsnew_admin"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/listv_imgesadded"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/xexit"
+        android:id="@+id/exit_xxx"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="المرفقات"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/title_xxe"
+        android:layout_below="@+id/exit_xxx"
+        />
+    <ListView
+        android:layout_below="@id/title_xxe"
+        android:id="@+id/listv_imgesadded"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"/>
+
+</RelativeLayout>
